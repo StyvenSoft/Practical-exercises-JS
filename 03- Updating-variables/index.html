@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Actualizando variables</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body> 
-    <h1>Actualizando variables css con Javascript</h1>
-    
+    <h1>Actualizando variables css con <span class="hl">Javascript</span></h1>
+    <div class="controls">
+        <label for="spacing">Espació de borde: </label>
+        <input type="range" name="spacing" id="spacing" min="10" max="200" value="10" data-sizing="px">
+         
+        <label for="blur">Difuminar: </label>
+        <input type="range" name="blur" id="blur" min="0" max="25" value="10" data-sizing="px">
+ 
+        <label for="base">Color base: </label>
+        <input type="color" name="base" id="base" value="#444444">
+    </div>
+    <img src="../images/photo1.jpg" alt="Photo">
+    <script src="main.js"></script>
 </body>
 </html>

@@ -1,5 +1,53 @@
 :root{
-    --base: #000000;
+    --base: #444444;
     --spacing: 10px;
     --blur: 10px;
 }
+.hl {
+    color: var(--base);
+  }
+img {
+    width: 45%;
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
+body {
+    text-align: center;
+    background: #607d8b;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+}
+.controls {
+    margin-bottom: 3rem;
+}
+  
+input[type='range']:focus {
+    outline: none;
+}
+
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background-color: rgb(190, 190, 190);
+    width: 20px;
+    height: 20px;
+    border: 3px solid #333;
+    border-radius: 50%;
+    margin-top: -9px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background-color: rgb(201, 192, 192);
+    height: 3px;
+}
+  
